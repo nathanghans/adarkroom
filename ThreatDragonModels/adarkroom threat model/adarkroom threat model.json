@@ -16,14 +16,21 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 30,
-                "y": 20
+                "id": "ce710500-0a4e-446f-97c2-a35e0b336c24"
               },
               "target": {
-                "x": 110,
-                "y": 100
+                "id": "ba7c984f-9fed-478f-a46c-4d63be967d24"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 33,
+                  "y": 103
+                },
+                {
+                  "x": 105,
+                  "y": 185
+                }
+              ],
               "id": "83c49237-e7a1-49e6-83df-d8db9240d3c0",
               "z": 1,
               "attrs": {}
@@ -32,14 +39,21 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 30,
-                "y": 20
+                "id": "ce710500-0a4e-446f-97c2-a35e0b336c24"
               },
               "target": {
-                "x": 110,
-                "y": 100
+                "id": "60ebcb49-4e8c-43df-af7b-6ea86693109d"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 241,
+                  "y": 103
+                },
+                {
+                  "x": 346,
+                  "y": 149
+                }
+              ],
               "id": "746e2a42-d4b7-4cad-b3dd-35720cd0bc59",
               "labels": [
                 {
@@ -61,6 +75,94 @@
                 },
                 ".connection": {
                   "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 168,
+                "y": 45
+              },
+              "angle": 0,
+              "id": "ce710500-0a4e-446f-97c2-a35e0b336c24",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "process 2"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 450,
+                "y": 67
+              },
+              "angle": 0,
+              "id": "ba7c984f-9fed-478f-a46c-4d63be967d24",
+              "z": 4,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "attack",
+                  "type": "Elevation of privilege",
+                  "description": "tes",
+                  "mitigation": "test"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "store 3"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 170,
+                "y": 243
+              },
+              "angle": 0,
+              "id": "60ebcb49-4e8c-43df-af7b-6ea86693109d",
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "actor 4"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             }
